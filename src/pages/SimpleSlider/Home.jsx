@@ -12,31 +12,31 @@ export default function SimpleSlider () {
         slidesToScroll: 1
       };
     return (
-        <div className="ml-96 w-96">
+        <div className="md:container md:mx-auto">
             <Slider {...settings}>
-                <div>
-                    <img src="/Balls/1.png" alt=""/>
+                <div className="flex items-center justify-center">
+                    <img className="mx-auto w-1/3 object-cover" src="/Balls/1.png" alt=""/>
                 </div>
-                <div>
-                    <img src="/Balls/2.png" alt=""/>
+                <div className="flex items-center justify-center">
+                    <img className="mx-auto w-1/3 object-cover" src="/Balls/2.png" alt=""/>
                 </div>
-                <div>
-                    <img src="/Balls/3.png" alt=""/>
+                <div className="flex items-center justify-center">
+                    <img className="mx-auto w-1/3 object-cover" src="/Balls/3.png" alt=""/>
                 </div>
-                <div>
-                    <img src="/Balls/4.png" alt=""/>
+                <div className="flex items-center justify-center">
+                    <img className="mx-auto w-1/3 object-cover" src="/Balls/4.png" alt=""/>
                 </div>
-                <div>
-                    <img src="/Balls/5.png" alt=""/>
+                <div className="flex items-center justify-center">
+                    <img className="mx-auto w-1/3 object-cover" src="/Balls/5.png" alt=""/>
                 </div>
-                <div>
-                    <img src="/Balls/6.png" alt=""/>
+                <div className="flex items-center justify-center">
+                    <img className="mx-auto w-1/3 object-cover" src="/Balls/6.png" alt=""/>
                 </div>
-                <div>
-                    <img src="/Balls/7.png" alt=""/>
+                <div className="flex items-center justify-center">
+                    <img className="mx-auto w-1/3 object-cover" src="/Balls/7.png" alt=""/>
                 </div>
-                <div>
-                    <img src="/Balls/8.png" alt=""/>
+                <div className="flex items-center justify-center">
+                    <img className="mx-auto w-1/3 object-cover" src="/Balls/8.png" alt=""/>
                 </div>
             </Slider>
         </div>
