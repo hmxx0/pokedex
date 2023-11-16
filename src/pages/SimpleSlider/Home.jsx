@@ -15,9 +15,11 @@ export default function SimpleSlider () {
     return (
         <div className="md:container md:mx-auto">
             <Slider {...settings}>
-                <div className="flex items-center justify-center hover:animate-bounce w-6 h-10 text-center">
+                <div className="flex items-center justify-center hover:animate-bounce w-6 h-10">
                     <img className="mx-auto w-1/3 object-cover " src="/Balls/1.png" alt=""/>
-                    <text className="text-3xl m-auto">Pokémon is based around building a small team of monsters ,<br />to battle other monsters in a quest to become the best.</text>
+                    <div className="text-center">
+                        <text className="text-3xl">Pokémon is based around building a small team of monsters ,<br />to battle other monsters in a quest to become the best.</text>
+                    </div>
                 </div>
                 <div className="flex items-center justify-center hover:animate-bounce w-6 h-10 ">
                     <img className="mx-auto w-1/3 object-cover" src="/Balls/2.png" alt=""/>
@@ -34,7 +36,7 @@ export default function SimpleSlider () {
                 <div className="flex items-center justify-center hover:animate-bounce w-6 h-10">
                     <img className="mx-auto w-1/3 object-cover" src="/Balls/4.png" alt=""/>
                     <div className="text-center">
-                        <text className="text-3xl">Trainers use devices called Poké Balls to capture and store Pokémon. <br />]When a wild Pokémon is weakened in battle, a Poké Ball can be thrown to attempt to catch it.</text>
+                        <text className="text-3xl">Trainers use devices called Poké Balls to capture and store Pokémon. <br />When a wild Pokémon is weakened in battle, a Poké Ball can be thrown to attempt to catch it.</text>
                     </div>
                 </div>
                 <div className="flex items-center justify-center hover:animate-bounce w-6 h-10">
