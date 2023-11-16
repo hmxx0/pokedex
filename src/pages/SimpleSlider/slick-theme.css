@@ -122,7 +122,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: 0px;
+    bottom: -70px;
 
     display: block;
 
@@ -202,3 +202,7 @@
     opacity: .75;
     color: rgb(255, 0, 0);
 }
+
+.no-hover:hover {
+    animation: none !important; /* Disables the hover animation */
+  }
