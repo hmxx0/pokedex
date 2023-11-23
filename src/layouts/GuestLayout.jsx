@@ -10,8 +10,7 @@ export default function GuestLayout() {
             <Link to="/">Home</Link>
           </div>
           <div>
-            <Link className='mr-8' to="/all">View All</Link>
-            <Link className='mr-4' to="/search">Search</Link>
+            <Link className='mr-4' to="/all">View All</Link>
           </div>
         </nav>
       </header>
