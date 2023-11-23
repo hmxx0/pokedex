@@ -4,16 +4,15 @@ import { Link, Outlet } from "react-router-dom"
 export default function GuestLayout() {
   return (
     <>
-      <header className='p-3 flex justify-between items-center bg-black'>
-        <span className="text-lg font-semibold text-pink-600">Search
-          <img src="" alt="" />
-        </span>
-        <span className="text-5xl font-semibold text-pink-600">Pokédex
-          <img src="" alt="" />
-        </span>
-        <nav className="flex items-center gap-5">
-          <Link to="/">Home</Link>
-          
+      <header className='p-3 bg-black'>
+        <nav className="flex p-3 text-xl">
+          <div className='mr-auto'>
+            <Link to="/">Home</Link>
+          </div>
+          <div>
+            <Link className='mr-8' to="/all">View All</Link>
+            <Link className='mr-4' to="/search">Search</Link>
+          </div>
         </nav>
       </header>
       <Outlet />
