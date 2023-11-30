@@ -5,8 +5,7 @@ import React from 'react'
 import Home from './pages/SimpleSlider/Home'
 import GuestLayout from './layouts/GuestLayout'
 import Search from './components/Search'
-import ViewAll from './pages/ViewAll'
-
+import ViewAll from './pages/viewAll'
 
 export default function App() {
   return (
