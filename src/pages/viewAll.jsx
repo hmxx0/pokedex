@@ -1,17 +1,23 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-import Papa from 'papaparse';
+import Search from '../components/Search';
 
 
 export default function viewAll() {
   const [column, setColumn] = useState([])
   const [records, setRecords] = useState([])
+  const getFilteredItems = (searchTerm) => {
+    let filterItems = records.filter(item =>
+      item.Name && item.Name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setRecords(filterItems)
+  };
   useEffect(()=> {
     fetch('http://localhost:5173/data.json')
     .then(res => res.json())
     .then(data => {
-      setColumn(Object.keys(data.pokemon[0]))
-      setRecords(data.pokemon)
+      setColumn(Object.keys(data.items[0]))
+      setRecords(data.items)
     })
   }, [])
   return (
@@ -45,6 +51,7 @@ export default function viewAll() {
           }
         </tbody>
       </table>
+      <Search getFilteredItems={getFilteredItems}></Search>
     </div>
   )
 }

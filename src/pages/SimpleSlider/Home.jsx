@@ -5,6 +5,7 @@ import "./slick-theme.css";
 import Search from "../../components/Search";
 
 
+
 export default function SimpleSlider () {
     const settings = {
         dots: true,
