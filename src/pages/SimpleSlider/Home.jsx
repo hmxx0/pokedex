@@ -15,7 +15,7 @@ export default function SimpleSlider () {
         slidesToScroll: 1
       };
     return (
-        <><div className="relative bottom-200 md:container md:mx-auto">
+        <div className="relative bottom-200 md:container md:mx-auto">
             <Slider {...settings}>
                 <div className="hover:animate-bounce w-6 h-10">
                     <img className="relative top-20 mx-auto w-5/12 object-cover " src="/Balls/1.png" alt="" />
@@ -43,19 +43,29 @@ export default function SimpleSlider () {
                 </div>
                 <div className="flex items-center justify-center hover:animate-bounce w-6 h-10">
                     <img className="relative top-20 mx-auto w-5/12 object-cover" src="/Balls/5.png" alt="" />
+                    <div className="text-center">
+                        <p className="text-3xl">Legendary Pokémon are rare, powerful Pokémon that are closely related to local lore surrounding the creation or destruction of a certain region. There is only one of each in the world.</p>
+                    </div>
                 </div>
                 <div className="flex items-center justify-center hover:animate-bounce w-6 h-10">
                     <img className="relative top-20 mx-auto w-5/12 object-cover" src="/Balls/6.png" alt="" />
+                    <div className="text-center">
+                        <p className="text-3xl">Another is that Lugia is actually an extremely dangerous Pokemon - one flap from its wings can cause a 40-day storm. In order to keep others safe, it spends most of its time gliding silently at the bottom of the ocean.</p>
+                    </div>
                 </div>
                 <div className="flex items-center justify-center hover:animate-bounce w-6 h-10">
                     <img className="relative top-20 mx-auto w-5/12 object-cover" src="/Balls/7.png" alt="" />
+                    <div className="text-center">
+                        <p className="text-3xl">Moltres is a powerful Pokemon who can usually avoid severe injury, but if it ever does find itself in need of healing, it has a spectacular method of doing so. It dives into a volcano and uses the lava to deal with its injuries.</p>
+                    </div>
                 </div>
                 <div className="flex items-center justify-center">
                     <img className="relative top-20 mx-auto w-5/12 object-cover" src="/Balls/8.png" alt="" />
+                    <div className="text-center">
+                        <p className="text-3xl">Xerneas is an immortal Pokemon that has lived for thousands of years. It sometimes sleeps in the form of a tree. But when it's awake, it can use its branch-like antlers to bestow immortality to others.</p>
+                    </div>
                 </div>
             </Slider>
-        </div><div>
-                <Search></Search>
-            </div></>
+        </div>
     );
 };
