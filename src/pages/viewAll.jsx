@@ -23,7 +23,7 @@ export default function viewAll() {
   return (
     <div>
       <table className='w-full border-collapse mt-5'>
-        <thead className='bg-sky-500'>
+        <thead className='bg-gradient-to-r from-pink-600 to-rose-700 text-yellow-500'>
           <tr className="">
             {column.map((c, i) => (
               <th className='p-3 text-left' key ={i}>{c}</th>
@@ -33,7 +33,7 @@ export default function viewAll() {
         <tbody className=''>
           {
             records.map((records, i) =>(
-              <tr className='border-b-[1px] hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300' key={i}>
+              <tr className='border-b-[1px] hover:bg-red-500 active:bg-red-200 focus:outline-none focus:ring focus:ring-violet-300 text-black' key={i}>
                   <td>{records.ID}</td>
                   <td>{records.Name}</td>
                   <td>{records.Type1}</td>
